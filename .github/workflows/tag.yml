@@ -1,0 +1,17 @@
+name: Tagit
+
+on:
+  push:
+    branches:
+      - master
+
+jobs:
+  tag:
+    name: Tag
+    runs-on: ubuntu-latest
+    steps:
+      - name: Tag
+        uses: duderman/gh-gem-tag-action@master
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          tag_prefix: v
