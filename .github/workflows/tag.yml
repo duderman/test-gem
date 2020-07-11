@@ -10,6 +10,7 @@ jobs:
     name: Tag
     runs-on: ubuntu-latest
     steps:
+      - uses: actions/checkout@v2
       - name: Tag
         uses: duderman/gh-gem-tag-action@master
         with:
