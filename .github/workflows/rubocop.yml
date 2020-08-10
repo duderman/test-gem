@@ -17,4 +17,4 @@ jobs:
       - uses: duderman/rubocop-annotate-action@master
         with:
           path: rubocop.json
-        if: ${{ steps.rubocop.conclusion == "failed" }}
+        if: ${{ steps.rubocop.conclusion == 'failure' }}
