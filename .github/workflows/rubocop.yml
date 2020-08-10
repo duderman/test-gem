@@ -1,4 +1,4 @@
-name: Gem deploy
+name: Rubocop
 
 on: push
 
