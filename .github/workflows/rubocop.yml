@@ -12,7 +12,7 @@ jobs:
         with:
           ruby-version: '2.7'
       - run: gem install rubocop --no-doc
-      - run: rubocop --progress format json --out rubocop.json
+      - run: rubocop --format progress --format json --out rubocop.json
         id: rubocop
       - uses: duderman/rubocop-annotate-action@master
         with:
