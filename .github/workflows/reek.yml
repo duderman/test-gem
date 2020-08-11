@@ -12,7 +12,7 @@ jobs:
         with:
           ruby-version: '2.7'
       - run: gem install reek --no-doc
-      - run: reek
+      - run: reek .
       - name: Generate reek json
         run: reek --format json > reek.json
         if: ${{ failure() }}
