@@ -1,0 +1,16 @@
+name: Test
+
+on:
+  push:
+    branches:
+      - master
+  pull_request:
+
+jobs:
+  test:
+    name: Just test
+    runs-on: ubuntu-latest
+    steps:
+      - name: Echo
+        run: echo Yo
+        if: ${{ github.ref == 'test-pr-push' || github.base_ref == 'master' }}
