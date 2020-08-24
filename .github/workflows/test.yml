@@ -13,4 +13,4 @@ jobs:
     steps:
       - name: Echo
         run: echo Yo
-        if: ${{ github.ref == "test-pr-push" || github.base_ref == "master" }}
+        if: ${{ github.ref == 'test-pr-push' || github.base_ref == 'master' }}
