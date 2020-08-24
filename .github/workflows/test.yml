@@ -11,5 +11,6 @@ jobs:
     name: Just test
     runs-on: ubuntu-latest
     steps:
-      run: echo Yo
+      - name: Echo
+        run: echo Yo
         if: ${{ github.ref == "test-pr-push" || github.base_ref == "master" }}
